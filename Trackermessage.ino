@@ -44,5 +44,5 @@ void loop() {
 void sendLocationSMS(float latitude, float longitude) {
   String locationURL = "https://www.google.com/maps?q=" + String(latitude, 6) + "," + String(longitude, 6);
   String message = "Current Location: " + locationURL;
-  smsHelper.send("10digitphonenum", message.c_str(), 45);
+  smsHelper.send("10DigitNum", message.c_str(), 45);
 }
